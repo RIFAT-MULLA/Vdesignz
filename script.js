@@ -1,5 +1,4 @@
-
-    // preloder
+// preloder
     var loader = document.getElementById("preloader");
         window.addEventListener("load",function(){
         loader.style.display = "none";
@@ -100,7 +99,7 @@
             });
             }
         }
-        for (let i = 3; i < filterImg.length; i++) {
+        for (let i = 6; i < filterImg.length; i++) {
             filterImg[i].setAttribute("onclick", "preview(this)"); 
         }
     }   
@@ -127,7 +126,7 @@
         closeIcon.onclick = ()=>{ 
             previewBox.classList.remove("show");
             shadow.classList.remove("show");
-            document.querySelector("body").style.overflow = "auto";
+            // document.querySelector("body").style.overflow = "auto";
             document.querySelector(".modal ").style.display= "block";
             document.querySelector(".modal-backdrop").style.display= "block";
         }
