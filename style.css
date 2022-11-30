@@ -18,6 +18,11 @@
     --red: #3a0202e1;
     --yellow: #F39C04;
 }
+
+.btnEffect:hover{
+    transition: 0.5s all;
+    transform: scale(0.9);
+}
 .flex{
     display: flex;
     justify-content: center;
