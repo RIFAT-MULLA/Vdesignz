@@ -614,7 +614,7 @@
 .wrap2 .container{
     display: flex;
     align-self: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0px;
     width: 100%;
 }
@@ -1477,6 +1477,10 @@
     margin: 8px;
     display: inline-block;
 }
+
+.wrapmodal .emailus i{
+    width: 20px;
+}
 @media only screen and (min-width: 0px) and (max-width: 720px) {
     .wrapmodal .wrapform{
         min-height: 100vh;
@@ -1607,8 +1611,8 @@
   .wrap8 .section1 {
     text-align: left;
     z-index: 1;
-    border-left: 3px solid var(--yellow);
-    padding-left: 25px;
+    /* border-left: 3px solid var(--yellow); */
+    /* padding-left: 25px; */
   }
   .wrap8 .section1 h1 {
     margin-top: 0px;
@@ -1636,7 +1640,7 @@
     align-self: flex-start;
     text-align: left;
     color: var(--white);
-    font-family: var(--playfair);
+    font-family: var(--roboto);
     font-size: 14px;
   }
   .wrap8 .heading {
@@ -1648,12 +1652,17 @@
 .wrap8 .blogBtn{
     border-radius: 25px;
     padding: 15px 30px;
-    background: #f39b047e;
+    border: 2px solid #f39b04;
     width: 300px;
     margin: 20px 0 10px 0;
+    transition: 0.3s all ease-in;
+}
+
+.wrap8 .blogBtn:hover{
+    background: #f39b047e;
 }
 .wrap8 .blogBtn a{
-    font-family: var(--playfair);
+    text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
